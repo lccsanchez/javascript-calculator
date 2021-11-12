@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+#root {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: lighten(#FF5733, 10%);
+  cursor: default;
+}
+
+.calculator {
+  width: 320px;
+  position: relative;
+  background: black;
+  border: 2px solid darken(grey, 20%);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#formula {
+  font-family: digital;
+  font-size: 20px;
+  min-height: 20px;
+  vertical-align: text-top;
+  background-color: black;
+  color: orange;
+  text-align: right;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding-right: 5px;
+}
+
+#display {
+  font-size: 29px;
+  font-family: digital;
+  line-height: 35px;
+  color: white;
+  text-align: right;
+  padding-right: 5px;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  outline: 1px solid black;
+  border: none;
+  background-color: lighten(grey, 20%);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  &:hover {
+    outline: 0.05em solid lighten(grey, 20%);
+    z-index: 3;
+    color: white;
+    background-color: grey;
+  }
+}
+
+#zero {
+  width: 160px;
+}
+
+#clear {
+  color: white; 
+  width: 160px;
+  background-color: #B82626;
+  &:hover {
+    color: black;}
+}
+
+#equals {
+  height: 130px;
+  position: absolute;
+  background-color: #E77A25;
+  color: white;
+  z-index: 3;
+  &:hover {
+    color: black;
+  }
+}
+
+
